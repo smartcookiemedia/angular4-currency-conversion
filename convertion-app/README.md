@@ -2,12 +2,12 @@
 
 ## Installation Instructions
 
-Launch Terminal / CMD window
-cd to project "home-depot-test-dp"
-Install angular CLI : npm install -g @angular/cli
-Go have a coffee
-Creating new Angular 4 project run : 
-ng new conversionapp
+- Launch Terminal / CMD window
+- cd to project "home-depot-test-dp"
+- Install angular CLI : npm install -g @angular/cli
+- Go have a coffee or chai
+- Creating new Angular 4 project run : 
+- ng new conversionapp
 
 
 ## install dependencies using following in cli 
