@@ -1,0 +1,61 @@
+<div class="conversion-widget">
+  <header>
+    <h2>Currency Converter</h2>
+  </header>
+  <!-- convertfromForm -->
+  <div>
+    <div id="convertFromForm">
+      <div class="slds-card__header slds-card__label">
+        <label class="slds-form-element__label" for="currency-from">Type in the amount and select currency:</label>
+      </div>
+      <div class="slds-card__header slds-grid">
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <input type="text" id="currencyFrom" class="slds-input" placeholder="" #currencyFrom value="1" pattern="[0-9]*">
+          </div>
+        </div>
+        <div class="slds-form-element">
+          <!--  <label class="slds-form-element__label" for="select-01">Select Currency</label> -->
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select (change)="onSelectFrom($event.target.value, currencyFrom.value)" class="slds-select">
+                <option *ngFor="let country of countries" value={{country.name}}>
+                  {{country.name}}
+                </option>
+              </select>
+              <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /convertFromform -->
+    <!-- convertToForm -->
+    <div id="convertToForm">
+      <div class="slds-card__header slds-card__label">
+        <label class="slds-form-element__label" for="currency-from">Converted Amount</label>
+      </div>
+      <div class="slds-card__header slds-grid">
+        <div class="slds-form-element">
+          <div class="slds-form-element__control">
+            <input type="text" id="currencyTo" class="slds-input" [(ngModel)]="currencyTo" #ctrl="ngModel">
+          </div>
+        </div>
+        <div class="slds-form-element">
+          <!-- <label class="slds-form-element__label" for="select-01">Select Currency</label> -->
+          <div class="slds-form-element__control">
+            <div class="slds-select_container">
+              <select (change)="onSelectTo($event.target.value,currencyFrom.value)" class="slds-select">
+                <option *ngFor="let country of countries" value={{country.name}}>
+                  {{country.name}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="disclaimer--link" (click)="changeShowStatus()">Disclaimer</a>
+          <app-disclaimer-component *ngIf="showHide" (popupClick)="changeShowStatus()"></app-disclaimer-component>           
+        </div>
+      </div>
+      <!-- /convertToForm -->
+    </div>
+  </div>

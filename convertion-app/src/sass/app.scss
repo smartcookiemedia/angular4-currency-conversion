@@ -1,0 +1,30 @@
+h1 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.slds-global-header_container {
+  background: #fff;
+}
+
+.slds-grid {
+  padding-top: 120px;
+}
+
+.slds-col {
+  margin-right: 10px;
+  &:first-child {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slds-grid {
+    display: block;
+  }
+  section .slds-col {
+    margin: 0 10px 20px;
+  }
+}

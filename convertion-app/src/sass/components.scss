@@ -1,0 +1,57 @@
+/* Currency converter styles */
+
+h2 {
+  font-size: 18px;
+}
+
+header {
+  margin-left: 16px;
+}
+
+.conversion-widget {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.slds-card__header {
+  padding-top: 5px;
+}
+
+.slds-card__label {
+  margin: 0;
+}
+
+.disclaimer--link {
+  margin-top: 1em;
+  display: inline-block;
+}
+
+.slds-grid .slds-form-element {
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: 768px) {
+  .conversion-widget {
+    margin-right: 10px;
+    max-width: 302px;
+  }
+
+  .slds-grid .slds-form-element:first-child {
+    margin: 0 10px 0 0;
+  }
+}
+
+
+/* Notifications compoenent */
+
+.slds-notification-container {
+  position: absolute;
+  left: -206px;
+  top: -81px;
+  width: 190px;
+  height: 4.5em;
+}
+
+.slds-notification {
+  width: 280px;
+}
