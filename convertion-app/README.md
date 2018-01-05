@@ -1,27 +1,44 @@
-# ConvertionApp
+# conversion-app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+## Installation Instructions
 
-## Development server
+Launch Terminal / CMD window
+cd to project "home-depot-test-dp"
+Install angular CLI : npm install -g @angular/cli
+Go have a coffee
+Creating new Angular 4 project run : 
+ng new conversionapp
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## install dependencies using following in cli 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+CD to project folder
 
-## Build
+On root:
+npm init
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Create NG app
 
-## Running unit tests
+- ng new conversion-app
+- cd conversion-app
+- ng serve --open
+- [set sass as default stylesheet] ng new my-sassy-app --style=scss
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Install webpack and dependencies
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- npm i webpack --save-dev
+- npm install --save-dev css-loader
 
-## Further help
+- npm install style-loader --save-dev
+- npm install — save-dev html-webpack-plugin
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Set stylesheet path in angular.cli.json
+
+"scripts": [
+        "assets/scripts/money.min.js"
+      ],
+
+
+
+
